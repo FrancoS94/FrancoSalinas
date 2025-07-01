@@ -1,0 +1,79 @@
+//reset
+@import "base/reset";
+//home
+@import "pages/home";
+.cuerpoindex{
+    padding: 30px;
+    min-height: 200px;
+    font-size: 3.5rem;
+    min-height: 20%;
+    @include flex;
+    color: $color-tipografia
+}
+//texto
+div{
+    p{
+    display: flex;
+    justify-content: left;
+    color: $color-tipografia;
+    }
+}
+//footer
+footer{
+    @include flex-general;
+    color:$color-tipografia;
+    font-weight: bold;
+    padding: 1rem;
+}
+//boton
+.botoningreso{
+    @include flex-general;
+}
+//boton framework
+.btn.btn-primary.btn-lg{
+    color: $color-tipografia;
+    background-color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.75rem 6rem;
+}
+//media queries para diseño responsivo
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 1rem;
+        nav{
+            ul{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    .cuerpoindex{
+        font-size: 2rem;
+        padding-left: 10px;
+}
+}
+@media (max-width:480px){
+    header{
+        img{
+            height: 40px;
+        }
+    }
+    .cuerpoindex{
+        font-size: 1.5rem;    
+    }
+    .btn.btn-primary.btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+.custom-card {
+  max-width: 50%;
+  height: 500px;   
+  overflow: hidden;
+  color: black;
+}
+

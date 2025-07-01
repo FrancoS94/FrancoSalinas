@@ -1,0 +1,44 @@
+//variables
+@import "../abstracts/variables";
+//mixin
+@import "../abstracts/mixin";
+
+header{
+    color: $color-tipografia;
+    @include flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    img{
+        height: 100px;
+        max-width: 100%;}
+    nav{
+        ul{
+            @include estilos-ul(whitesmoke);
+            li{
+                a{
+                    color: $color-tipografia;
+                    text-decoration: none;
+                    &:hover{
+                        color: $color-hover;
+                        text-decoration: underline;
+                    }
+                    &:active{
+                        color:black;
+                    }
+                }
+            }
+        }
+    }    
+    } 
+body{
+    background-color: $color-principal;
+    color: $color-tipografia;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
